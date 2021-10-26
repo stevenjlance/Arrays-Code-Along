@@ -1,51 +1,63 @@
 // 0. Create as many variables with your favorite foods and log them to the console in less than 1 minute. The first one has been provided.
 var favFood1 = "Pizza";
+var favFood2 = "Chicken";
+var favFood3 = "Pasta";
+var favFood4 = "Apples";
+var favFood5 = "Pesto";
 
 
 
 //1a. CREATE a list of your favorite foods (also known as an array in Javascript)
-
+var favFood = ["Pizza", "Chicken", "Pasta", "French Fries", "Apple", "Pesto"]
 
 
 // b. Print out the entire array
-
-
+console.log(favFood)
+console.log(favFood[5])
+console.log(favFood[1])
 
 //c. add food item
-
-
+favFood.push("Stew")
+console.log(favFood)
+favFood.push("Ice Cream")
+console.log(favFood)
 
 //d. Change the 2nd food to a different food
-
-
+favFood[1] = "Peanut Butter Cup"
+console.log(favFood)
 
 //e. Remove an item .pop() .shift()
+favFood.pop()
+console.log(favFood)
 
-
-
+favFood.shift()
+console.log(favFood)
 //f. remove the first item
+favFood.shift()
+console.log(favFood)
 
 
 //g. Print out the length of the favFoods array
-
+console.log(favFood.length)
 
 
 //2. READ: Access the 5th value in the array below using index values.
 var names = ["Nafi", "Abdoulbaari", "Sena", "Ashton", "Salimata", "Afi", "Mike", "Mohamed", "Niya", "Dayja-Ney", "Abdurahman", "Nathaniel", "Michelle", "Justin", "Mosiah", "Walid", "Joi", "Rafiq", "Majic", "Karen", "Jasmine", "Tediane", "Samiya"];
-
+console.log(names[4])
 
 
 
 //3. UPDATE: Change the 3rd student on the list to a different name.
-
+names[2] = "Momo"
 
 
 //4. UPDATE: Using .push, add more students not currently in the class to the list
-
+names.push("Sena")
 
 
 //5. DELETE: Remove a student from the list using .pop and .shift.
-
+names.pop()
+names.shift()
 
 
 //6. Insert an item into the list of names
@@ -53,36 +65,44 @@ var names = ["Nafi", "Abdoulbaari", "Sena", "Ashton", "Salimata", "Afi", "Mike",
 
 //7. Replace the student at index of 2 with the variable below.
 var newStudent = "Steven";
-
+names[2] = newStudent
 
 
 //8. Print out the current length of your list of names.
-
+console.log(names.length)
 
 
 //9. Print out the message "_______ takes computer science for the first 5 people in the array"
-
+console.log(`${names[0]} takes computer science`)
+console.log(`${names[1]} takes computer science`)
+console.log(`${names[2]} takes computer science`)
+console.log(`${names[3]} takes computer science`)
+console.log(`${names[4]} takes computer science`)
 
 
 //10. Create an array of your favorite TV shows. Add at least 6 TV shows to the array
-
+var tvShows = ["Rick and Morty", "Bobs Burgers", "Family Guy", "The Simpsons", "South Park", "Archer"]
 
 
 //11. Print out the length of the TV shows array
-
+console.log(tvShows.length)
 
 
 //12. Print out "I like to watch _____" for the 3rd, 4th, and 5th items on your list
+console.log(`I like to watch ${tvShows[2]}`)
+console.log(`I like to watch ${tvShows[3]}`)
+console.log(`I like to watch ${tvShows[4]}`)
 
 
 
 
 //13. Delete the tv show that is at the index of 3
-
-
+tvShows.splice(3,1)
+console.log(tvShows)
 
 //14. Sort the TV shows array so that the shows are alphabatized
-
+tvShows.sort()
+console.log(tvShows)
 
 
 
@@ -99,7 +119,8 @@ var cool_numbers = [
   5, 19, 30
 ]
 //15. Sort the cool_numbers array from highest to lowest
-
+cool_numbers.sort()
+console.log(cool_numbers)
 
 //16. CHALLENGE: Print out a random number in the array using Math.random
 
