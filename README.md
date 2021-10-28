@@ -59,6 +59,15 @@ console.log(favFood)
 // favFood is now equal to ["Chicken", "Tacos"]
 ```
 
+Suppose we wanted to delete an item in the middle of the array. We can use the `.splice` [method](https://www.w3schools.com/jsref/jsref_splice.asp) to achieve this:
+```javascript
+// Delete the one item on the list starting at an index of 2
+favFood.splice(1, 1);
+console.log(favFood)
+// favFood is now equal to ["Chicken"]
+
+
+
 `.length` Method
 ------------------
 The final method that we will use with arrays is the `.length` command. The length property  returns the number of elements in an array. This is particularly useful when you have a long array and need to go through the entire array. This command will become particularly powerful when we attempt to process arrays.
